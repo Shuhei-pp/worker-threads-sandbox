@@ -3,7 +3,7 @@ import { Worker } from "node:worker_threads";
 
 function createWorker(workerData: { value: number }) {
 	return new Promise((resolve) => {
-		const worker = new Worker(path.resolve("worker.js"), {
+		const worker = new Worker(path.resolve("src/worker.js"), {
 			workerData,
 		});
 

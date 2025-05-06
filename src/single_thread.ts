@@ -12,11 +12,17 @@ async function run() {
 	console.log(`process.pid: ${process.pid}`);
 	console.log("start!");
 	heavyTask(1e10);
-	console.log(`time: ${new Date().getTime() - start.getTime()}ms`);
+	console.log(
+		`heavyTask1 done! time: ${new Date().getTime() - start.getTime()}ms`,
+	);
 	heavyTask(1e10);
-	console.log(`time: ${new Date().getTime() - start.getTime()}ms`);
+	console.log(
+		`heavyTask2 done! time: ${new Date().getTime() - start.getTime()}ms`,
+	);
 	heavyTask(1e10);
-	console.log(`time: ${new Date().getTime() - start.getTime()}ms`);
+	console.log(
+		`heavyTask3 done! time: ${new Date().getTime() - start.getTime()}ms`,
+	);
 	console.log("end");
 }
 
